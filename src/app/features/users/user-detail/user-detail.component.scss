@@ -1,0 +1,98 @@
+/*.container {*/
+/*  border-radius: 10px;*/
+/*  overflow: hidden;*/
+/*}*/
+
+/*.card {*/
+/*  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);*/
+/*}*/
+
+/*.img-fluid {*/
+/*  width: 150px;*/
+/*  height: 150px;*/
+/*  border-radius: 50%;*/
+/*  object-fit: contain;*/
+/*}*/
+
+
+/*.d-flex > div, .d-flex > p {*/
+/*  overflow: hidden;*/
+/*  text-overflow: ellipsis;*/
+/*  white-space: nowrap;*/
+/*}*/
+
+/*.card .row {*/
+/*  margin: 0;*/
+/*  padding: 10px 0;*/
+/*}*/
+
+/*@media (max-width: 576px) {*/
+/*  .img-fluid {*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*  }*/
+
+/*  .icon-img {*/
+/*    width: 35px;*/
+/*    height: 35px;*/
+/*  }*/
+
+/*  .card .row {*/
+/*    padding: 5px 0;*/
+/*  }*/
+/*}*/
+
+
+.hero-section {
+  height:100px;
+  position: relative;
+  background-color: var(--primary);
+}
+.btn.back {
+  border-radius: 50% !important;
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  opacity: .8;
+  transition: .3s all ease-in-out;
+  &:hover {
+    opacity: 1;
+    transition: .3s all ease-in-out;
+  }
+}
+.avatar {
+  position: absolute;
+  bottom: 0%;
+  transform: translateY(50%);
+  left: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  img {
+    transition: .3s all ease-in-out;
+  }
+  &:hover img {
+    transition: .3s all ease-in-out;
+    transform: scale(1.1);
+  }
+}
+.icon-img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 767px) {
+
+  .avatar {
+
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,50%);
+  }
+}
+
+.border-bottom {
+
+}

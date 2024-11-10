@@ -1,0 +1,72 @@
+<div *ngIf="isLoading; else userProfile">
+  <div class="d-flex justify-content-start align-items-start" style="height: 100vh;">
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+  </div>
+</div>
+
+
+<ng-template #userProfile>
+
+  <section class="w-100 hero-section">
+    <div class="container position-relative h-100">
+      <a class="btn back mb-3 p -0 d-flex align-items-center justify-content-center" (click)="reset()">←</a>
+      <div class="d-flex justify-content-center align-items-center mt-3 avatar">
+        <img [src]="user?.avatar" class="img-fluid" alt="User Avatar">
+      </div>
+    </div>
+  </section>
+  <section class="mt-5 pt-5 pt-md-0 border-bottom pb-2 ">
+    <div class="container">
+      <div class="row">
+        <div class="col-2 d-none d-md-block"></div>
+        <div class="col-md-8 d-flex flex-column flex-md-row justify-content-between">
+          <div class="row m-0 w-100">
+            <div class="col-12 col-md-6">
+              <div class="d-flex flex-row gap-3 ps-md-5 align-items-center">
+                <img class="icon-img" src="assets/icons/id.png">
+                <div class="d-flex gap-2">
+                  <p class="m-0 fw-bolder">ID : </p>
+                  <p class="m-0">{{ user?.id }}</p>
+                </div>
+              </div>
+             </div>
+            <div class="col-12 col-md-6">
+              <div class="d-flex flex-row gap-3 align-items-center">
+                <img class="icon-img" src="assets/icons/email.png">
+                <div class="d-flex gap-2">
+                  <p class="m-0 fw-bolder">Email : </p>
+                  <p class="m-0">{{ user?.email }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col-2 d-none d-md-block"></div>
+        <div class="col-md-8 d-flex flex-column flex-md-row justify-content-between">
+          <div class="row m-0 w-100">
+            <div class="col-12 col-md-6">
+              <div class="d-flex flex-row gap-3 ps-md-5 align-items-center">
+                <img class="icon-img" src="assets/icons/name.png">
+                <div class="d-flex gap-2">
+                  <p class="m-0 fw-bolder">First Name : </p>
+                  <p class="m-0">{{ user?.first_name }}</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="d-flex flex-row gap-3 align-items-center">
+                <img class="icon-img" src="assets/icons/name.png">
+                <div class="d-flex gap-2">
+                  <p class="m-0 fw-bolder">Last Name : </p>
+                  <p class="m-0">{{ user?.last_name }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</ng-template>

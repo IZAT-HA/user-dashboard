@@ -1,0 +1,104 @@
+.user-card {
+  transition: 0.3s all linear !important;
+  overflow: hidden;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 3%);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.42);
+}
+
+.user-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: 0.3s all linear !important;
+}
+
+.user-card .flex-shrink-0 {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-card .rounded-circle {
+  width: auto;
+  height: auto;
+  max-width: 80px;
+  max-height: 80px;
+  object-fit: cover;
+}
+
+.user-card .fw-bold {
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.user-card .row {
+  padding: 0.5rem 1rem;
+}
+
+.user-card .col-4 {
+  padding: 0.25rem;
+}
+
+.user-card div {
+  word-wrap: break-word;
+}
+
+.user-card .fw-bold {
+  margin-bottom: 0.25rem;
+}
+
+.user-card div > div {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .user-card {
+    margin: 1rem;
+  }
+
+  .user-card .flex-shrink-0 {
+    margin-right: 2rem;
+  }
+
+  .user-card .col-4 {
+    padding: 0.5rem;
+  }
+}
+
+
+.scale-in-center {
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}

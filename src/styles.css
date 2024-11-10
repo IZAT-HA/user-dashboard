@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+:root {
+  --primary: #ff4081;
+  --secondary: rgb(232, 248, 253);
+  --systemGray1: #3A3A3CFF;
+  --systemGray2: #E5E5EAFF;
+}
+.page-content {
+  padding-top: 80px;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 3px;
+}
+
+*::-webkit-scrollbar-track {
+  background: rgba(124, 124, 124, 0.55);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #ff4081;
+  border-radius: 20px;
+  border: 3px solid rgba(124, 124, 124, 0.55);
+}

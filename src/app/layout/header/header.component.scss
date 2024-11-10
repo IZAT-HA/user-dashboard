@@ -1,0 +1,25 @@
+
+.header-toolbar {
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  z-index: 9999;
+  height: 80px;
+  padding: 5px;
+
+
+  .header-logo {
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  .header-search {
+    ::ng-deep .mat-mdc-text-field-wrapper {
+      border-radius: 50px;
+    }
+  }
+
+}

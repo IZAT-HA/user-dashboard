@@ -1,0 +1,50 @@
+.user-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.content {
+
+  overflow-y: scroll;
+  height: calc(100vh - 170px);
+}
+
+.body {
+  max-width: 80%;
+  overflow: hidden;
+  background: #cfcfcf1f;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px #2c24244d;
+}
+
+
+@media screen and (max-width: 767px) {
+  .body {
+    max-width: 100%;
+  }
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.col-md-4 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 768px) {
+  .col-md-4 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+}
